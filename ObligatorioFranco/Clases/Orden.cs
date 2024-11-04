@@ -8,13 +8,13 @@ namespace ObligatorioFranco.Clases
     public class Orden
     {
         private static int IdIncremental = 0;
-        public int IdOrden;
-        public Cliente Cliente;
-        public Tecnico Tecnico;
-        public string Descripcion;
-        public DateTime Fecha;
-        public EstadoOrden EstadoOrden;
-        public List<string> Comentarios;
+        public int IdOrden { get; set; }
+        public Cliente Cliente { get; set; }
+        public Tecnico Tecnico { get; set; }
+        public string Descripcion { get; set; }
+        public DateTime Fecha { get; set; }
+        public EstadoOrden EstadoOrden { get; set; }
+        public List<string> Comentarios { get; set; }
 
         public Orden(Cliente cliente, Tecnico tecnico, string descripcion, DateTime fecha, EstadoOrden estadoOrden, List<string> comentarios)
         {
